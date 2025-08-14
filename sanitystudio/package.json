@@ -1,0 +1,41 @@
+{
+  "name": "sanitystudio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sanity Studio for the UMCP AASU website",
+  "main": "package.json",
+  "author": "UMCP AASU <umd.aasu@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build",
+    "graphql": "sanity graphql deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.21.9",
+    "@sanity/components": "^2.14.0",
+    "@sanity/core": "^2.21.8",
+    "@sanity/default-layout": "^2.21.9",
+    "@sanity/default-login": "^2.21.9",
+    "@sanity/desk-tool": "^2.23.2",
+    "@sanity/types": "^2.21.7",
+    "@sanity/vision": "^2.21.9",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "sanity-plugin-autocomplete-tags": "^1.0.1",
+    "sanity-plugin-better-slug": "^1.0.0",
+    "sanity-plugin-color-picker": "^1.0.3",
+    "sanity-plugin-media": "^1.4.3",
+    "sanity-plugin-order-documents": "^0.0.22",
+    "styled-components": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:UMCP-AASU/umcpaasu-website.git"
+  }
+}

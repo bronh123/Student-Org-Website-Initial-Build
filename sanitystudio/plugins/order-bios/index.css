@@ -1,0 +1,173 @@
+:root {
+  --border-style: 1px solid rgba(0, 0, 0, 0.1);
+  --background-color: #e4e8ed;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  color: #7b8ca8;
+  background-color: transparent;
+  padding: calc(0.75rem - 1px) calc(2.75rem - 1px);
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  border: 2px solid rgba(123, 140, 168, 0.35);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7b8ca8;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  position: absolute;
+}
+
+.list {
+  list-style-type: none;
+  min-width: 220px;
+  max-width: 100%;
+  overflow-y: auto;
+  margin-top: 0;
+  padding: 0;
+}
+
+.listItem:first-child {
+  border-top: var(--border-style);
+}
+
+.listItem {
+  padding: 5px;
+  border: var(--border-style);
+  border-top: 0;
+  animation: fadeIn ease 1s;
+}
+
+.document {
+  margin: 0;
+  padding: 0 10px;
+  max-width: 66%;
+}
+
+.outerWrapper {
+  max-width: 60rem;
+  width: 100%;
+  margin: 1rem auto;
+  background: white;
+  border: 1px solid var(--background-color);
+  box-shadow: 8px 8px 2px var(--background-color);
+  border-radius: 4px;
+}
+
+.innerWrapper {
+  padding: 0.5rem 3rem 3rem 3rem;
+  margin-top: 2rem;
+}
+
+.marginTop {
+  margin-top: 3rem;
+}
+
+.noTopMargin {
+  margin-top: 0;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+}
+
+.rule {
+  margin-top: 1.25rem;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexEnd {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.selectWrapper {
+  margin-bottom: 1rem;
+  width: 15rem;
+  text-align: left;
+  transition: 250ms ease-out;
+  padding: 1rem 0.75rem 1rem 1rem;
+  background: #f3f3f3;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  animation: fadeIn ease 0.5s;
+}
+
+.fieldsSelect {
+  width: 100%;
+}
+
+.tooltip {
+  margin-top: -0.25rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.tooltipText {
+  margin: 0.75rem;
+  max-width: 16rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgb(153, 153, 153);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 42rem) {
+  .flexSpaceBetween {
+    flex-direction: column-reverse;
+  }
+
+  .selectWrapper {
+    width: 100%;
+    max-width: 12.5rem;
+  }
+}
+
+.fieldButton:hover {
+  background: #eee;
+}
+
+.subheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.refreshButton {
+  display: flex;
+  place-items: center;
+  height: 100%;
+  padding: 0.45rem 0.45rem 0.25rem 0.45rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}

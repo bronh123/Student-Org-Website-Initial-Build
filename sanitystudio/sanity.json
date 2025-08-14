@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "ejt9tnx5",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "UMCP AASU Website"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "autocomplete-tags",
+    "media",
+    "order-bios",
+    "color-picker",
+    "better-slug"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.ts"
+    }
+  ]
+}
